@@ -1,0 +1,51 @@
+@import "tailwindcss";
+
+@font-face {
+      font-family: 'Rubik'; /* Choose a descriptive name for your font */
+      src: url('./assets/fonts/Rubik-VariableFont_wght.ttf') format('truetype'); /* Adjust path and format as needed */
+      font-weight: normal;
+      font-style: normal;
+  }
+
+@font-face {
+      font-family: 'Rubik';
+      src: url('./assets/fonts/Rubik-Italic-VariableFont_wght.ttf') format('truetype');
+      font-weight: normal;
+      font-style: italic;
+  }
+
+
+@theme{
+   --color-blue-600: hsl(231, 69%, 60%);
+   --color-red-400: hsl(0, 94%, 66%);
+   --color-grey-50: hsl(0, 0%, 97%);
+   --color-blue-950: hsl(229, 31%, 21%);
+   --font-rubik: "Rubik", sans-serif;
+   --font-weight-bold: 500;
+   --font-weight-regular: 400;
+}
+
+
+/*  * { */
+/*   /* margin: 0;  */ */
+/*   /* padding: 0; */ */
+/*   box-sizing: border-box; */
+/*   scroll-behavior: smooth; */
+/* } */
+
+
+body{
+  font-size: 18px;
+  border: 10px solid blue;
+  display: flex;
+  align-items:center;
+  justify-content: center;
+}
+
+.padding{
+@apply pt-16 max-lg:py-8;
+}
+
+.padding-x {
+  @apply max-sm:px-8;
+}
